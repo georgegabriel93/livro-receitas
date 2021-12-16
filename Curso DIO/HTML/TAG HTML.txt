@@ -1,0 +1,222 @@
+<title> É o título do documento, sendo visualizada na barra de título do navegador.
+
+<meta> Engloba uma série de informações – comumente chamadas de metainformações – como a descrição da página, palavras-chave etc.
+
+<script> É responsável pela inclusão e/ou definição de scripts relacionados ao documento.
+
+<link> É responsável pela inclusão de folhas de estilo (externas) relacionadas ao documento. Também possibilita a inclusão de favicons (pequenos ícones que aparecem na barra de endereços do navegador).
+
+<style> Assim como a anterior, é responsável pelo vínculo de folhas de estilo ao documento − quando elas são declaradas diretamente no documento.
+
+<id> Utilizado para definir um identificador, que deve ser único, para uma tag em um documento.
+
+<class> Usado para definir uma classe à qual uma ou mais tags pertencem. Com base nesses dois tipos de identificação, é possível, por exemplo, fazer referência a um ou mais atributos para inserirmos estilização visual nas páginas, através de Folhas de Estilo ou eventos e interação, através de Javascript.
+
+<table> 	Container principal da tabela 
+
+<tr> linhas 
+
+<td> 	Representa as colunas e precisa ser inserida dentro da tag de linha. 
+
+<thead> 	Armazena o cabeçalho da tabela, sendo composto por linhas e colunas. Este elemento, a exemplo do que vimos anteriormente, tem função semântica em termos de estruturação de conteúdo. 
+
+
+
+======TAG PARA FORMULARIOS
+
+
+
+<form>  Container principal do formulário.
+
+<input>  Campo do formulário. Como há diversos tipos de campos, fazemos uso do atributo “type” para informar o tipo a ser utilizado – conforme veremos mais adiante.
+
+<textarea>  Campo de texto de múltiplas linhas.
+
+<select> e <option>  Campos de seleção, onde o container é definido pela tag <select> e os itens pela tag <option>.
+
+<button>  Campo de botão. Permite que uma ação seja executada no formulário – enviar o formulário, limpar os dados etc.
+
+<label>  Usado para definir um título, uma legenda, que descreva para que serve cada campo do formulário.
+
+                                 EM HTML
+                               TAG PARA HTML
+ -------------LISTAS-----------------
+<ul> cria uma lista nao numerada
+<ol> cria uma lista numerada
+<li>vai dentro da(<ul> || <ol>) para numerar ou não, UMA LISTA PODE CONTER <ul> COMO <ol>.
+
+LISTA <OL> podem receber estilo tambem SINTAXE: <ol type= (A, a, I, i)
+
+LISTA <UL> podem receber outro estilo de marcador SINTAXE: <UL TYPE = ( DISC, CIRCLE, SQUARE)
+
+ ------------INSERINDO IMAGEMS-------------- 
+
+
+<img src=(local da imagem ex:<img src="C:\Users\gshad\Desktop\cursoJS\Porto_Alegre.jpg">)
+
+ PODENDO ALINHAR A IMAGEM AO TEXTO UTILIZANDO "ALIGN" 
+
+EX:<img src="C:\Users\gshad\Desktop\cursoJS\Porto_Alegre.jpg" align="left" >
+ imagem pode ficar a:
+direita :            align="rigth"
+esqueda  :           align = "left"
+abaixo do texto  :   align="botton"
+no topo do texto :   align= "top"
+no centro do texto : align="middle"
+ 
+
+ -----------------COMO CRIAR LINKS(tag ARCHOR = <A>------------------
+
+link direto para outra pagina  : <a href="url">texto descritivo</a>
+link para mesma pagina como subtemas: <A href = "#Capítulo I">O que é HTML?</A><BR>
+                                         <A name = "Capítulo I">
+                                          <H1>ESCREVA SEU TITULO AQUI</H1>
+                                          <P>ESCREVA SEU TEXTO AQUI </P>
+                                      <A href = "#Capítulo II">Principais comandos</A>
+
+ ------------------MUDANDO DE COR O LINK-------------------------
+
+Sintaxe  :  <BODY LINK="COR" VLINK="#COR" ALINK="COR">
+
+------------------ INSERINDO IMAGEM NO LINK-------------------
+
+Sintaxe  :   <a href="URL"><img src="img_url"></a>
+
+--------------MAPEANDO UMA IMAGEM------------------------
+
+SINTAXE : <img src="menu.gif" alt="Menu" usemap="#menu">
+
+SINTAXE : <area shape="rect(retangulo), ou "circle", ou polygon coords="x,y,x,y..." href="URL">
+
+
+
+------------- CRIANDO TABELAS EM HTML-------------------------
+
+Sintaxe : <table>
+              <TR> "RESPONSAVEL POR CRIAR AS CELULAS"
+                <TD> "RESPONSAVEL POR CRIAR AS LINHAS"
+          
+
+
+-----------------ALTERANDO A COR E A BORDA DA TABELA-----------------
+
+Sintaxe : <TABLE BORDER="(tamanho)" BORDERCOLOR="FF6600(cor a ser utilizada)"> </table>
+
+--------------A COR DA TABELA TODA---------------------
+
+Sintaxe : <TABLE BORDER="3"BORDERCOLOR="FF6600" BGCOLOR="CCFFFF">
+
+------------COR DE CADA CELULA----------------------
+
+Sintaxe : <TR BGCOLOR="CCFFFF"> ou <TD BGCOLOR="CCFFFF"> ->//PARA UM UNICO ESPAÇO NA LINHA
+
+------------DEFININDO O TAMANHO E A LARGURA---------------------
+
+Sintaxe : <TABLE WIDTH="300" HEIGHT="20%" BORDER="2">
+
+-----------DEFININDO O ALINHAMENTO DA TABELA------------
+
+Sintaxe : <TABLE align="center", "right", "left">
+
+-----------DEFININDO O ESPAÇO DA LINHA DA TABELA--------------
+
+Sintaxe : <TABLE CELLSPACING="numero">       
+
+-----------DEFININDO O ESPAÇO ENTRE O DADO E A BORDA DE UMA CELULA----------
+
+Sintaxe : <TABLE CELLPADDING="7">
+
+----------DEFININDO O ALINHAMENTO DA CELULA---------------
+
+Sintaxe : <TD ALIGN="CENTER" , "LEFT", "RIGHT">
+
+--------PARA ALINHAR OS DADOS DA CELULA VERTICALMENTE----------
+
+Sintaxe : <TD VALIGN= "TOP" ,  "BOTTON", "CENTER"
+
+-------- "COLSPAN" SEVER PARA DEIXAR UMA CELULA UM UNICO DADO-----
+
+Sintaxe : <TD COLSPAN="NUMERO"> //O NUMERO UTILIZADO NO COLSPAN E REFERENTE AO NUMERO DE CELULAS NA LINHA 
+
+
+--------ENVIO DE DADOS PARA O SERVIDOR OU EMAIL--------------
+
+Sintaxe : <form action="url" method="get"> // ENVIO DIRETO PARA O SERVIDOR POR MEIO DE "SCRIPT CGI" CGI= COMMON GATEWAY INTERFACE
+
+Sintaxe : <form action="url" method="post"> // ENVIA PARA O SERVIDOR COMO UMA UNICA URL, IDEAL PARA RESPOSAS UNICAS
+
+-----------TAG <INPUT>--------------------
+
+Sintaxe  : <input type/value/name/maxlenght/src/checked/size> // A TAG <INPUT> PODE RECEBER ESSES ATRIBUTOS
+
+
+--------TAG <TYPE>------------
+
+Sintaxe : <type= image/file/reset/button/submit/password/text/radio/checkbox/hidden> //A TAG <TYPE> NAO DEVER SER INSERIDA ENTRE ASPAS SE NAO TIVER VALOR DEFINIDO
+
+
+---------TAG <FRAMESET>----------
+
+//ESSA TAG CRIA VARIOS HTML INDEPENDENTES EM UMA MESMA PAGINA.
+
+Sintaxe : <FRAMESET>
+             <FRAME SRC="frame_a.html>
+             <FRAME SRC="frame_b.html>
+          </FRAMESET>
+
+----------TAG PARA DEFINIR A PORCENTAGEM(ESPAÇO QUE IRA OCULPAR DENTRO DA PAGINA) DE CADA FRAME.
+
+Sintaxe : <FRAMESET COLS="25%,*,25%"> // O ASTERISCO(*) E REFERENTE AO ESPAÇO QUE SOBROU, NESTE CASO 50%
+ 
+
+-------TAGS QUE SAO USADAS DENTRO DO <FRAMESET>--------
+"SRC"= Especifica a "URL" que você deseja carregar em um frame
+"MARGINWIDTH"= Especifica as margens direita e esquerda(LARGURA) do conteudo em um frame. Seu valor é espeficico em PIXELS.
+"MARGINHEIGHT"= Especifica as margens superior e inferior do conteudo em um frame e seu valor também é especificado em PIXELS.
+"SCROLLING"= Adiciona uma barra de rolagem a um frame.
+"NORESIZE"= Impede que o usuário redimensione um frame.
+
+------ APONTANDO FRAME PARA CARREGAR INDEPENDENTE------
+//O código para carregar o arquivo deve chamar o nome do HTML.
+
+Sintaxe : <FRAME SRC="phil" NAME="main">
+"phil.html"//nome do html a ser aberto
+
+-------ESPECIFICANDO UM FRAME EM UM LINK------
+
+Sintaxe : <A HREF="URL" TARGET="NOME_FRAME">
+// O atributo TARGET possui quanto valores
+
+"_blank"= Abre o link em uma nova janela.
+"_self"= Abre o link no mesmo frame.
+"_parent"= Carrega a página no frame principal.
+"_top"= Carrega a p´gina no frame mai alto da página.
+
+--------TAG <META>// FORNECE DADOS SOBRE SEU HTML, E DEVE SER INSERIDA DENTRO DO <HEAD>
+Sintaxe : <META NAME="valor relativo ao nome">  //o atributo NAME fornece um nome para a informação no atributo CONTENT.//<META NAME="author" CONTENT="joao da silva">//o atributo CONTENT="joao", refere-se ao nome do autor, especificado em NAME.
+
+OS VALORES DO ATRIBUTO "NAME" PODEM SER:
+- " AUTHOR "= INFORMA AO AUTOR DO DOCUMENTO
+- " DESCRIPTION "= DESCREVE O DOCUMENTO
+- " KEYWORDS "= DEFINE AS PALAVRAS-CHAVE QUE DESCREVEM O DOCUMENTO.
+- " GENERATOR "= DEFINE O PROGRAMA UTILIZADO PARA GERAR O DOCUMENTO.
+- " ROBOTS "= DEFINE REGRAS PARA OS RÔBOS (PROGRAMAS UTILIZADOS EM SISTEMAS DE BUSCA).
+- " COPYRIGHT "= DEFINE INFORMAÇÕES DE DIREITOS AUTORAIS DO DOCUMENTO.
+
+-------O ATRIBUTO HTTP-EQUIV FORNECE UM CABEÇALHO HTTP PARA A INFORMAÇÕES NO ATRIBUTO CONTENT------- 
+  OS VALORES PARA A TAG <META HTTP-EQUIV="VALOR">
+OS VALORES SÃO : 
+- "CONTENT TYPE" = DEFINE O TIPO DO DOCUMENTO (TEXT/HTML)
+- "EXPIRES" = DEFINE QUANDO O DOCUMENTO SERÁ CONSIDERADO OBSOLETO.
+- "REFRESH" = DEFINE O TEMPO PARA QUE A PAGINA WEB SEJA RECARREGADA 
+- "SET-COOKIE" = DEFINE UM VALOR DE COOKIE. 
+
+
+
+
+
+
+ 
+
+
+
